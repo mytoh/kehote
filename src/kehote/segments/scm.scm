@@ -19,7 +19,7 @@
         (git-darty (lambda ()
                      (let* ((p (run-process '(git diff --quiet HEAD) :wait #t))
                             (status (process-exit-status p)))
-                       (if-not (zero? status)
+                       (if  (not (zero? status))  
                                " ÷"
                                "")))))
     (string-append (colour-string 33 "  ♠ ")
