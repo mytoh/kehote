@@ -10,3 +10,5 @@
 (define (main args)
   (let ((status (cadr args)))
     (prompt status)))
+
+; vim:filetype=scheme
