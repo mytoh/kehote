@@ -4,7 +4,7 @@
 (use clojure)
 (use kehote.väri)
 (use util.match)
-(use kehote.themes.simple)
+(use kehote.themes.default)
 
 
 (define (main args)
