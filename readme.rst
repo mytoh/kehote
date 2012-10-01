@@ -1,8 +1,10 @@
 themes
 ======
 
-.. image: default.png
+.. figure: default.png
+   default
 
 
 
-.. image: simple.png
+.. figure: simple.png
+   simple
