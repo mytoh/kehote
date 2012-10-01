@@ -7,4 +7,4 @@ default
 simple
 =====
 
-.. image:: http://github.com/mytoh/raw/master/kehote/simple.png
+.. image:: http://github.com/mytoh/kehote/raw/master/simple.png
