@@ -1,10 +1,10 @@
 default
 ======
 
-.. image:: http://raw.github.com/mytoh/kehote/master/default.png
+.. image:: http://github.com/mytoh/kehote/raw/master/default.png
 
 
 simple
 =====
 
-.. image:: http://raw.github.com/mytoh/master/kehote/simple.png
+.. image:: http://github.com/mytoh/raw/master/kehote/simple.png
