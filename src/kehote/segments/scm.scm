@@ -19,12 +19,21 @@
         (git-darty (lambda ()
                      (let* ((p (run-process '(git diff --quiet HEAD) :wait #t))
                             (status (process-exit-status p)))
-                       (if  (not (zero? status))  
+                       (if  (not (zero? status))
                                " ÷"
                                "")))))
-    (string-append (colour-string 33 "  ♠ ")
+    (string-append
+      (colour-string 240 " (")
+      (colour-string 33 "♠ ")
+      (colour-string 39 (git-repo))
+      " "
          (colour-string 82 (git-branch))
-         (colour-string 1  (git-darty)))))
+         (colour-string 1  (git-darty))
+      (colour-string 240 ")")
+         )))
+
+(define (git-repo)
+  (sys-basename (process-output->string "git rev-parse --show-toplevel")))
 
 (define (hg)
   (colour-string 33 " ⮘ ")
