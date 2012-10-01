@@ -1,12 +1,10 @@
-themes
+default
 ======
 
-.. figure:: http://github.com/mytoh/kehote/default.png
-
-   default
+.. image:: http://raw.github.com/mytoh/kehote/master/default.png
 
 
+simple
+=====
 
-.. figure:: http://github.com/mytoh/kehote/simple.png
-
-   simple
+.. image:: http://raw.github.com/mytoh/master/kehote/simple.png
