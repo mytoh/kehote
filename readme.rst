@@ -6,5 +6,3 @@ themes
 
 
 
-.. figure: simple.png
-   simple
