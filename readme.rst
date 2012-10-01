@@ -1,8 +1,12 @@
 themes
 ======
 
-.. image:: default.png
+.. figure:: http://github.com/mytoh/kehote/default.png
+
+   default
 
 
-.. image:: simple.png
 
+.. figure:: http://github.com/mytoh/kehote/simple.png
+
+   simple
