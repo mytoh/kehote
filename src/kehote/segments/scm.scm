@@ -42,9 +42,8 @@
 (define (svn)
   (colour-string 33 " ǂ "))
 
-(define darcs
-  (lambda ()
-    (colour-string 33 " darcs ")))
+(define ( darcs)  
+    (colour-string 33 " darcs "))
 
 
 
