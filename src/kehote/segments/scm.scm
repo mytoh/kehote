@@ -23,27 +23,27 @@
                                " ÷"
                                "")))))
     (string-append
-      (colour-string 240 " (")
-      (colour-string 33 "♠ ")
-      (colour-string 39 (git-repo))
+      (paint " (" 240)
+      (paint "♠ " 33)
+      (paint (git-repo) 39)
       " "
-         (colour-string 82 (git-branch))
-         (colour-string 1  (git-darty))
-      (colour-string 240 ")")
+         (paint (git-branch) 82)
+         (paint (git-darty) 1)
+      (paint ")" 240)
          )))
 
 (define (git-repo)
   (sys-basename (process-output->string "git rev-parse --show-toplevel")))
 
 (define (hg)
-  (colour-string 33 " ⮘ ")
+  (paint " ⮘ " 33)
   )
 
 (define (svn)
-  (colour-string 33 " ǂ "))
+  (paint " ǂ " 33))
 
-(define ( darcs)  
-    (colour-string 33 " darcs "))
+(define (darcs)
+    (paint " darcs " 33 ))
 
 
 

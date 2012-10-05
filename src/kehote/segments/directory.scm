@@ -5,7 +5,7 @@
   (export
     segment.directory)
   (use file.util)
-  (use kehote.väri)
+  (use maali)
   (use srfi-13))
 (select-module kehote.segments.directory)
 
@@ -49,7 +49,7 @@
 
 (define (prettify-directory lst)
   (string-join (map
-                 (lambda (d) (colour-string 110 d))
+                 (lambda (d) (colour-string d 110))
                  lst)
-               (colour-string 240 "/"))) ;U2A20
+               (colour-string "/" 240 ))) ;U2A20
 
