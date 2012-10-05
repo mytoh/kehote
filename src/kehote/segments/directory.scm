@@ -49,7 +49,7 @@
 
 (define (prettify-directory lst)
   (string-join (map
-                 (lambda (d) (colour-string d 110))
+                 (lambda (d) (paint d 110))
                  lst)
-               (colour-string "/" 240 ))) ;U2A20
+               (paint "/" 240 ))) ;U2A20
 
