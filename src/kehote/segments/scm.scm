@@ -3,7 +3,7 @@
 (define-module kehote.segments.scm
   (export
     segment.scm)
-  (use kehote.väri)
+  (use maali)
   (use gauche.process)
   (use gauche.parseopt)
   (use util.match)
@@ -43,7 +43,7 @@
   (paint " ǂ " 33))
 
 (define (darcs)
-    (paint " darcs " 33 ))
+    (paint " darcs " 33))
 
 
 
