@@ -11,26 +11,25 @@
 (select-module kehote.segments.scm)
 
 (define (git)
-  (let ((git-branch (lambda ()
-                      (sys-basename (string-copy
-                                      (process-output->string
-                                        "git symbolic-ref HEAD")
-                                      2))))
+  (let ((git-branch (lambda () (sys-basename
+                                 (string-copy
+                                   (process-output->string
+                                     "git symbolic-ref HEAD") 2))))
         (git-darty (lambda ()
                      (let* ((p (run-process '(git diff --quiet HEAD) :wait #t))
                             (status (process-exit-status p)))
                        (if  (not (zero? status))
-                               " ÷"
-                               "")))))
+                         " ÷"
+                         "")))))
     (string-append
       (paint " (" 240)
       (paint "♠ " 33)
       (paint (git-repo) 39)
       " "
-         (paint (git-branch) 82)
-         (paint (git-darty) 1)
+      (paint (git-branch) 82)
+      (paint (git-darty) 1)
       (paint ")" 240)
-         )))
+      )))
 
 (define (git-repo)
   (sys-basename (process-output->string "git rev-parse --show-toplevel")))
@@ -43,7 +42,7 @@
   (paint " ǂ " 33))
 
 (define (darcs)
-    (paint " darcs " 33))
+  (paint " darcs " 33))
 
 
 
