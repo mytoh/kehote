@@ -1,8 +1,6 @@
 #!/usr/bin/env gosh
 ;; -*- coding: utf-8 -*-
 
-(use clojure)
-(use kehote.väri)
 (use util.match)
 (use kehote.themes.default)
 
