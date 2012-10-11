@@ -5,5 +5,5 @@
                                   "bin/kehote")
                  :wait #t)
    ;; library sources
-   (copy-directory* (build-path ( *lehti-cache-directory* ) "kehote/src")
-                    (build-path ( *lehti-dist-directory* ) "kehote/src"))))
+   (copy-directory* (build-path ( *lehti-cache-directory* ) "kehote/lib")
+                    (build-path ( *lehti-dist-directory* ) "kehote/lib"))))
