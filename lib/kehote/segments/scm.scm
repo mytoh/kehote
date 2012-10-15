@@ -14,7 +14,7 @@
   (let ((git-branch (lambda () (sys-basename
                                  (string-copy
                                    (process-output->string
-                                     "git symbolic-ref HEAD") 2))))
+                                     "git symbolic-ref HEAD 2> /dev/null") 2))))
         (git-darty (lambda ()
                      (let* ((p (run-process '(git diff --quiet HEAD) :wait #t))
                             (status (process-exit-status p)))
