@@ -9,8 +9,6 @@
 (define (segment.promptchar status)
   (match status
     ("0" 
-     (string-append
-           (paint "#; " 236)
-           ))
+     (paint "#;" 240))
     (_ (paint "->" 124 ))))
 
