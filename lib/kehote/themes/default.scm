@@ -17,5 +17,5 @@
         (segment.yuno)
         (segment.newline)
         (segment.promptchar status)
-        " ")))
+        )))
 
