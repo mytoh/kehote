@@ -1,9 +1,0 @@
-
-(install
-  (
-    (run-process `(gauche-install -T ,(build-path ( *lehti-dist-directory* ) "kehote")
-                                  "bin/kehote")
-                 :wait #t)
-   ;; library sources
-   (copy-directory* (build-path ( *lehti-cache-directory* ) "kehote/lib")
-                    (build-path ( *lehti-dist-directory* ) "kehote/lib"))))
