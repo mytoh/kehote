@@ -1,4 +1,5 @@
 
+(name "kehote")
  (files ("lib/**/*.scm"
         "bin/*"
         "*.lehspec"
