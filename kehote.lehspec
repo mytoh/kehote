@@ -4,3 +4,7 @@
         "*.lehspec"
         "readme*"
         "test/**/*.scm"))
+
+(dependencies
+  ("maali" "kirjasto")
+  )
