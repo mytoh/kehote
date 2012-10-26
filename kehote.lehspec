@@ -1,13 +1,13 @@
 
 (spec
-  (name "kehote")
-  (files ("lib/**/*.scm"
+  '(name "kehote")
+  '(files ("lib/**/*.scm"
           "bin/*"
           "*.lehspec"
           "readme*"
           "test/**/*.scm"))
 
-  (dependencies
+  '(dependencies
     ("maali" "kirjasto")
     )
   )
