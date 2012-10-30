@@ -14,7 +14,7 @@
   (let ((git-branch (lambda () (sys-basename
                                  (string-copy
                                    (process-output->string
-                                     "git symbolic-ref HEAD 2> /dev/null") 2))))
+                                     "git symbolic-ref HEAD" :error :null) 2))))
         (git-darty (lambda ()
                      (let* ((p (run-process '(git diff --quiet HEAD) :wait #t))
                             (status (process-exit-status p)))
@@ -28,15 +28,13 @@
       " "
       (paint (git-branch) 82)
       (paint (git-darty) 1)
-      (paint ")" 240)
-      )))
+      (paint ")" 240))))
 
 (define (git-repo)
   (sys-basename (process-output->string "git rev-parse --show-toplevel")))
 
 (define (hg)
-  (paint " ⮘ " 33)
-  )
+  (paint " ⮘ " 33))
 
 (define (svn)
   (paint " ǂ " 33))
