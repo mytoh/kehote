@@ -6,11 +6,16 @@
   (use util.match))
 (select-module kehote.segments.promptchar)
 
-(define (segment.promptchar status)
-  (match status
-    ("0" 
+(define (segment.promptchar char)
+  (match char
+    ('arrow
+     (arrow)) 
+    ('default
      (string-append
-     (paint "#;" 240)
-     (paint "> " 109)))
-    (_ (paint "->" 124 ))))
+       (paint "#;" 240)
+       (paint "> " 109))) 
+    (_ (paint "->" 124))))
+
+(define (arrow)
+  (paint "→  " 22))
 
