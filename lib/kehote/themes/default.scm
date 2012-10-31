@@ -16,6 +16,6 @@
         " "
         (segment.yuno)
         (segment.newline)
-        (segment.promptchar status)
+        (segment.promptchar 'arrow)
         )))
 
