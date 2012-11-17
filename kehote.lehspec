@@ -1,13 +1,17 @@
 
 (spec
   '(name "kehote")
-  '(files ("lib/**/*.scm"
-          "bin/*"
-          "*.lehspec"
+  '(files ("bin/kehote"
+          "lib/kehote/themes.sls"
+          "lib/kehote/themes/default.sls"
+          "lib/kehote/themes/yuki.sls"
+          "lib/kehote/segments.sls"
+          "lib/kehote/segments/directory.sls"
+          "lib/kehote/segments/git.sls"
+          "lib/kehote/segments/muridana.sls"
+          "lib/kehote/segments/yuno.sls"
+          "kehote.lehspec"
           "readme*"
-          "test/**/*.scm"))
+          ))
 
-  '(dependencies
-    ("maali" "kirjasto")
-    )
   )

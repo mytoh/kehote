@@ -1,12 +1,15 @@
-":"; exec gosh -- $0 "$@"
-;; -*- coding: utf-8 -*-
+#!/usr/bin/env mosh
 
-(use util.match)
-(use kehote.themes.default)
-
+(import
+  (scheme base)
+  (scheme process-context)
+  (prefix (kehote cli)
+          cli.))
 
 (define (main args)
-  (let ((status (cadr args)))
-    (prompt status)))
+  (cli.runner args)
+  )
 
-; vim:filetype=scheme
+(main (command-line))
+
+;; vim: filetype=scheme
