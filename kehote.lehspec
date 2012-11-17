@@ -4,6 +4,7 @@
   (description "prompt")
   (homepage "http://github.com/mytoh/kehote")
   (files ("bin/kehote"
+          "lib/kehote/cli.sls"
           "lib/kehote/themes.sls"
           "lib/kehote/themes/default.sls"
           "lib/kehote/themes/yuki.sls"
