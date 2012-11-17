@@ -13,7 +13,6 @@
           "lib/kehote/segments/muridana.sls"
           "lib/kehote/segments/yuno.sls"
           "kehote.lehspec"
-          "readme*"
           ))
 
   )
