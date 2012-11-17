@@ -1,7 +1,9 @@
 
 (spec
-  '(name "kehote")
-  '(files ("bin/kehote"
+  (name "kehote")
+  (description "prompt")
+  (homepage "http://github.com/mytoh/kehote")
+  (files ("bin/kehote"
           "lib/kehote/themes.sls"
           "lib/kehote/themes/default.sls"
           "lib/kehote/themes/yuki.sls"
