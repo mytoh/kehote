@@ -3,7 +3,7 @@
   (export
     git)
   (import
-    (scheme base)
+    (rnrs)
     (only (srfi :13)
           string-trim-right)
     (srfi :48)

@@ -2,8 +2,7 @@
 (library (kehote cli)
   (export runner)
   (import
-    (scheme write)
-    (scheme base)
+    (rnrs)
     (srfi :48)
     (kehote themes)
     )

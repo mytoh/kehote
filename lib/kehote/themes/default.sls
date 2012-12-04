@@ -3,7 +3,7 @@
   (export
     default)
   (import
-    (scheme base)
+    (rnrs)
     (loitsu file)
     (loitsu maali)
     (srfi :48)

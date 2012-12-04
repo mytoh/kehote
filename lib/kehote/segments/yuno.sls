@@ -2,7 +2,7 @@
 (library (kehote segments yuno)
   (export yuno)
   (import
-    (scheme base)
+    (rnrs)
     (loitsu file)
     (loitsu maali)
     )

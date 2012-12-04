@@ -4,7 +4,7 @@
     yuki
     default)
   (import
-    (scheme base)
+    (rnrs)
     (kehote themes yuki)
     (kehote themes default))
 

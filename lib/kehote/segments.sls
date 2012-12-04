@@ -6,7 +6,7 @@
     git
     directory)
   (import
-    (scheme base)
+    (rnrs)
     (kehote segments git)
     (kehote segments yuno)
     (kehote segments muridana)
