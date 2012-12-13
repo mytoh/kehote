@@ -1,15 +1,11 @@
 #!/usr/bin/env mosh
 
 (import
-  (scheme base)
-  (scheme process-context)
+  (rnrs)
   (prefix (kehote cli)
-          cli.))
+          cli:))
 
-(define (main args)
-  (cli.runner args)
-  )
 
-(main (command-line))
+(cli:runner (command-line))
 
 ;; vim: filetype=scheme
