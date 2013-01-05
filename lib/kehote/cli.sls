@@ -5,13 +5,20 @@
     (rnrs)
     (srfi :48)
     (kehote themes)
+    (match)
     )
 
 
   (begin
 
     (define (runner args)
-      (default args))
+      (let ((theme (cadr args)))
+        (match theme
+          ("default"
+           (default args))
+          ("yuki"
+           (yuki args))))
+      )
 
 
     ))
