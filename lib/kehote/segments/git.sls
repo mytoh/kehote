@@ -3,10 +3,10 @@
   (export
     git)
   (import
-    (rnrs)
+    (silta base)
     (only (srfi :13)
           string-trim-right)
-    (srfi :48)
+    (srfi :48 intermediate-format-strings)
     (loitsu maali)
     (loitsu file)
     (loitsu process))

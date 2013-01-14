@@ -2,7 +2,7 @@
 (library (kehote segments muridana)
   (export muridana)
   (import
-    (rnrs)
+    (silta base)
     (loitsu file)
     (loitsu maali)
     )

@@ -2,7 +2,7 @@
 (library (kehote segments directory)
   (export directory)
   (import
-    (rnrs)
+    (silta base)
     (irregex)
     (loitsu file)
     )

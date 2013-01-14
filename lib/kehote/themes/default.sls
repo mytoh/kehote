@@ -3,7 +3,7 @@
   (export
     default)
   (import
-    (rnrs)
+    (silta base)
     (loitsu file)
     (loitsu maali)
     (srfi :48)

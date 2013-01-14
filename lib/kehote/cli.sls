@@ -2,7 +2,7 @@
 (library (kehote cli)
   (export runner)
   (import
-    (rnrs)
+    (silta base)
     (srfi :48)
     (kehote themes)
     (match)

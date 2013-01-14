@@ -3,10 +3,10 @@
   (export
     yuki)
   (import
-    (rnrs)
+    (silta base)
     (loitsu file)
     (loitsu maali)
-    (srfi :48)
+    (srfi :48 intermediate-format-strings)
     (prefix (kehote segments)
             seg:))
 

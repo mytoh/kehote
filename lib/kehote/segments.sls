@@ -6,7 +6,7 @@
     git
     directory)
   (import
-    (rnrs)
+    (silta base)
     (kehote segments git)
     (kehote segments yuno)
     (kehote segments muridana)
