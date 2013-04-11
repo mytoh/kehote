@@ -1,18 +1,18 @@
 
 (library (kehote segments yuno)
-  (export yuno)
+    (export yuno)
   (import
     (silta base)
     (loitsu file)
-    (loitsu maali)
+    (maali)
     )
 
   (begin
 
     (define (yuno)
       (string-append
-        ; (paint 172 "X / _ / X")
-        (paint "✘" 95)
+          ;; (paint 172 "X / _ / X")
+          (paint "✘" 95)
         (paint "╹◡╹" 172)
         (paint "✘" 95)))
 

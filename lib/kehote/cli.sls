@@ -1,13 +1,11 @@
 
 (library (kehote cli)
-  (export runner)
+    (export runner)
   (import
     (silta base)
     (srfi :48)
     (kehote themes)
-    (match)
-    )
-
+    (match))
 
   (begin
 
@@ -17,8 +15,6 @@
           ("default"
            (default args))
           ("yuki"
-           (yuki args))))
-      )
-
+           (yuki args)))))
 
     ))

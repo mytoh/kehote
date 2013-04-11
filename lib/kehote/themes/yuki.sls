@@ -1,11 +1,11 @@
 
 (library (kehote themes yuki)
-  (export
-    yuki)
+    (export
+      yuki)
   (import
     (silta base)
     (loitsu file)
-    (loitsu maali)
+    (maali)
     (srfi :48 intermediate-format-strings)
     (prefix (kehote segments)
             seg:))

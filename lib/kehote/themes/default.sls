@@ -1,11 +1,11 @@
 
 (library (kehote themes default)
-  (export
-    default)
+    (export
+      default)
   (import
     (silta base)
     (loitsu file)
-    (loitsu maali)
+    (maali)
     (srfi :48)
     (prefix (kehote segments)
             seg:))
@@ -14,8 +14,8 @@
 
     (define (default args)
       (format #t "~a ~a \n~a "
-             (paint (seg:directory)  39)
-             (seg:git)
-             (paint "#;" 129))
+              (paint (seg:directory)  39)
+              (seg:git)
+              (paint "#;" 129))
       )
     ))

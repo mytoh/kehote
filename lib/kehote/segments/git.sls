@@ -1,13 +1,13 @@
 
 (library (kehote segments git)
-  (export
-    git)
+    (export
+      git)
   (import
     (silta base)
     (only (srfi :13)
           string-trim-right)
     (srfi :48 intermediate-format-strings)
-    (loitsu maali)
+    (maali)
     (loitsu file)
     (loitsu process))
 
@@ -15,14 +15,14 @@
 
     (define (directory-git?)
       (if (string=? "true\n"
-                    (process-output->string
-                      "git rev-parse --is-inside-work-tree"))
+            (process-output->string
+             "git rev-parse --is-inside-work-tree"))
         #t #f))
 
     (define (git-branch)
       (path-basename
-        (string-trim-right
-          (process-output->string "git symbolic-ref HEAD" ))))
+       (string-trim-right
+           (process-output->string "git symbolic-ref HEAD" ))))
 
     (define (git-repo)
       (path-basename (string-trim-right (process-output->string "git rev-parse --show-toplevel"))))
@@ -30,10 +30,10 @@
     (define (git)
       (if (directory-git? )
         (format "~a~a ~a~a"
-                (paint "[" 'white)
-                (paint  (git-repo) 39)
-                (paint (git-branch)  63)
-                (paint "]" 'white)
-                )
+          (paint "[" 'white)
+          (paint (git-repo) 39)
+          (paint (git-branch)  63)
+          (paint "]" 'white)
+          )
         ""))
     ))
