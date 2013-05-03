@@ -15,6 +15,8 @@
           ("default"
            (default args))
           ("yuki"
-           (yuki args)))))
+           (yuki args))
+          (else
+              (default args)))))
 
     ))
